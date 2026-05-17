@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Pahilo AD | Book Your Free Consultation</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── STACKED CONTACT LAYOUT ── */
+    .contact-wrapper {
+      background: var(--off-white);
+      padding: 90px 5% 40px 5%;
+      display: block;
+      clear: both;
+    }
+    
+    /* Form Container (Single Box) */
+    .form-container-box {
+      max-width: 900px;
+      margin: 0 auto 60px auto; /* Centers the box and adds space below it */
+    }
+
+    /* Info Bar Panel (Single Box at the bottom) */
+    .info-bar-section {
+      background: var(--off-white);
+      padding: 0 5% 90px 5%;
+    }
+    .info-bar-box {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--white);
+      padding: 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(201,168,76,0.15);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 Columns across for info pieces */
+      gap: 24px;
+    }
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .info-icon {
+      font-size: 1.4rem;
+      background: rgba(201,168,76,0.1);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-details h4 {
+      color: var(--navy);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      margin-bottom: 2px;
+      font-size: 0.95rem;
+    }
+    .info-details p {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 968px) {
+      .info-bar-box {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid on tablets */
+        gap: 32px;
+      }
+    }
+    @media (max-width: 580px) {
+      .info-bar-box {
+        grid-template-columns: 1fr; /* Stacks completely on small mobile */
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Pahilo AD Home">
+    <img src="Logo/logo.png" alt="Pahilo AD Logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="vision.html">Our Vision</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn btn-gold">Get Started</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="hero-content" style="position: relative; z-index: 2;">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Contact Us</span>
+    </div>
+    <h1>Let's Scale Your <span class="gold">Business</span></h1>
+    <div class="gold-divider"></div>
+    <p>Ready to start your first campaign or need a customized page boosting plan? Get in touch with our strategy team today.</p>
+  </div>
+</header>
+
+<main>
+  <section class="contact-wrapper">
+    <div class="section-header center">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Book A Free <span class="gold">Consultation</span></h2>
+      <div class="gold-divider center"></div>
+    </div>
+
+    <div class="form-container-box card">
+      <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 8px;">
+        
+        <div class="grid-2">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="E.g., Aarav Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="E.g., +977 98XXXXXXXX" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="name@company.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Required Service</label>
+          <select id="service" name="service">
+            <option value="facebook-ads">Facebook & Instagram Ads</option>
+            <option value="page-boosting">Page Boosting Packages</option>
+            <option value="promotional">Promotional Campaigns</option>
+            <option value="creative-design">Creative Graphic/Video Design</option>
+            <option value="other">Other Digital Consultation</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell Us About Your Project</label>
+          <textarea id="message" name="message" placeholder="Briefly explain what you sell and your primary growth goals..." required></textarea>
+        </div>
+
+        <div style="display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap;">
+          <button type="submit" class="btn btn-gold" style="flex: 2; justify-content: center; min-width: 200px;">
+            Send Message & Start Growing →
+          </button>
+          <button type="reset" class="btn btn-outline" style="flex: 1; justify-content: center; min-width: 100px;">
+            Reset Form
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="info-bar-section">
+    <div class="info-bar-box">
+      
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-details">
+          <h4>Our Agency Office</h4>
+          <p>Kathmandu, Nepal</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div class="info-details">
+          <h4>Call / WhatsApp</h4>
+          <p>+977-XXXX-XXXX</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div class="info-details">
+          <h4>Drop An Email</h4>
+          <p>hello@pahiload.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon">⏰</div>
+        <div class="info-details">
+          <h4>Business Hours</h4>
+          <p>Sun – Fri: 10 AM – 6 PM</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <span>© 2025 <a href="index.html">Pahilo AD</a>. All rights reserved. | Nepal's #1 Digital Ad Agency</span>
+    <span>Designed with ♥ in Nepal 🇳🇵</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

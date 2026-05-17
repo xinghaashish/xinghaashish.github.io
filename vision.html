@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Vision — Pahilo AD | First Ad. First Impact.</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── VISION PAGE INNER CONTENT STYLES ── */
+    .vision-container {
+      background: var(--off-white);
+      padding-bottom: 90px;
+    }
+    .vision-card {
+      background: var(--white);
+      padding: 44px 32px;
+      text-align: center;
+    }
+    .vision-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .vision-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .vision-card p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+    .blueprint-statement {
+      grid-column: span 3;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: var(--white);
+      padding: 60px 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      margin-top: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .blueprint-statement::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(201,168,76,0.12), transparent 60%);
+    }
+    .blueprint-statement h2 { color: var(--gold); margin-bottom: 16px; }
+    .blueprint-statement p { font-size: 1.2rem; font-style: italic; max-width: 800px; margin: 0 auto; line-height: 1.8; color: var(--white); opacity: 0.95; }
+
+    @media (max-width: 1024px) {
+      .blueprint-statement { grid-column: span 2; }
+    }
+    @media (max-width: 768px) {
+      .blueprint-statement { grid-column: span 1; padding: 40px 24px; p { font-size: 1.05rem; } }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Pahilo AD Home">
+    <img src="Logo/logo.png" alt="Pahilo AD Logo" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="vision.html" class="active">Our Vision</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn btn-gold">Get Started</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="hero-content" style="position: relative; z-index: 2;">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Our Vision</span>
+    </div>
+    <h1>Our Vision & <span class="gold">Mission</span></h1>
+    <div class="gold-divider"></div>
+    <p>At Pahilo AD, we aren't just setting up marketing accounts; we are structuring the concrete digital framework for how brands achieve market dominance in Nepal.</p>
+  </div>
+</header>
+
+<section class="vision-container" aria-labelledby="vision-heading">
+  <div class="section-header center">
+    <div class="section-tag">Forward Thinking</div>
+    <h2 id="vision-heading" class="section-title">The Blueprint of Our <span class="gold">Purpose</span></h2>
+    <div class="gold-divider center"></div>
+  </div>
+
+  <div class="grid-3">
+    <article class="card vision-card">
+      <div class="vision-icon">👁️‍🗨️</div>
+      <h3>Our Vision</h3>
+      <p>To uplift local businesses into powerhouse brands and redefine Nepal's digital layout by offering high-tier, metrics-driven advertising that remains accessible, innovative, and completely transparent.</p>
+    </article>
+
+    <article class="card vision-card">
+      <div class="vision-icon">🎯</div>
+      <h3>Our Mission</h3>
+      <p>To end empty ad spending. We blend targeted audience analytics with premium localized creativity to deploy scroll-stopping campaigns that directly result in business scaling and maximum conversion metrics.</p>
+    </article>
+
+    <article class="card vision-card">
+      <div class="vision-icon">💎</div>
+      <h3>Core Philosophy</h3>
+      <p>We treat every client's ad spend as an accurate investment asset. Our team stands firmly on deep market honesty, explicit performance analytics, zero excuses, and standard-setting design work.</p>
+    </article>
+
+    <div class="blueprint-statement">
+      <h2>The "Pahilo Impact" Core Promise</h2>
+      <p>"We feel a deep sense of responsibility toward Nepal's evolving commercial landscape. Our main metric is to close the technical divide between global ad technologies and regional business scales. When you launch your first ad with us, you create an absolute impact."</p>
+    </div>
+  </div>
+</section>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <span>© 2025 <a href="index.html">Pahilo AD</a>. All rights reserved. | Nepal's #1 Digital Ad Agency</span>
+    <span>Designed with ♥ in Nepal 🇳🇵</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

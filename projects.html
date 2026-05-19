@@ -88,6 +88,9 @@
       .case-study-card:nth-child(even) { direction: ltr; }
       .case-results-grid { grid-template-columns: repeat(3,1fr); }
     }
+      @media (max-width: 480px) {
+      .case-results-grid { grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
 <body>

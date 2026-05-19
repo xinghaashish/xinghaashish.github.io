@@ -323,3 +323,109 @@ footer::before {
   section { padding: 50px 4%; }
   .btn { padding: 12px 24px; font-size: 0.88rem; }
 }
+/* ============================================
+   RESPONSIVE OVERHAUL — All Devices
+   Added for full mobile/tablet compatibility
+   ============================================ */
+
+/* ── NAVBAR MOBILE ── */
+@media (max-width: 768px) {
+  .navbar { padding: 0 4%; height: 64px; }
+  .nav-logo img { max-height: 52px; }
+  .hamburger { display: flex; }
+  .nav-links, .nav-cta { display: none; }
+  .mobile-menu { top: 64px; }
+}
+
+/* ── SECTIONS ── */
+@media (max-width: 768px) {
+  section { padding: 56px 4%; }
+  .section-header { margin-bottom: 36px; }
+  .section-subtitle { font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  section { padding: 44px 4%; }
+}
+
+/* ── GRIDS ── */
+@media (max-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid-3, .grid-2, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ── FOOTER ── */
+@media (max-width: 1024px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+  .footer-top { grid-template-columns: 1fr; gap: 32px; padding: 48px 4% 36px; }
+  .footer-brand p { max-width: 100%; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; padding: 18px 4%; }
+}
+
+/* ── BUTTONS ── */
+@media (max-width: 480px) {
+  .btn { padding: 12px 22px; font-size: 0.88rem; }
+}
+
+/* ── PAGE HERO (inner pages) ── */
+@media (max-width: 768px) {
+  .page-hero { min-height: auto; padding: 100px 4% 56px; }
+  .page-hero h1 { font-size: clamp(1.8rem, 6vw, 2.4rem); }
+}
+
+/* ── TYPOGRAPHY SCALE ── */
+@media (max-width: 768px) {
+  h1 { font-size: clamp(2rem, 6vw, 2.6rem); }
+  h2 { font-size: clamp(1.6rem, 5vw, 2rem); }
+  h3 { font-size: clamp(1.1rem, 4vw, 1.4rem); }
+}
+
+/* ── SCROLL TOP BUTTON ── */
+@media (max-width: 768px) {
+  .scroll-top { bottom: 20px; right: 16px; width: 40px; height: 40px; font-size: 1rem; }
+}
+
+/* ── ABOUT PAGE ── */
+@media (max-width: 768px) {
+  .story-grid { grid-template-columns: 1fr !important; }
+  .story-img { min-height: 280px; }
+  .timeline { padding-left: 28px; }
+}
+
+/* ── SERVICES PAGE ── */
+@media (max-width: 768px) {
+  .service-card-top { padding: 24px 20px 20px; }
+  .service-card-body, .service-card-footer { padding-left: 20px; padding-right: 20px; }
+}
+
+/* ── CONTACT PAGE ── */
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── PROJECTS PAGE ── */
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── PREVENT HORIZONTAL OVERFLOW ── */
+* { max-width: 100%; }
+img, video, iframe { max-width: 100%; height: auto; }
+table { width: 100%; overflow-x: auto; display: block; }
+
+/* ── TOUCH TARGETS ── */
+@media (max-width: 768px) {
+  a, button { min-height: 44px; display: inline-flex; align-items: center; }
+  .nav-links a, .mobile-menu ul li a { min-height: 44px; display: flex; align-items: center; }
+  .footer-col ul li a { min-height: 36px; display: flex; align-items: center; }
+}
+
+/* ── SAFE AREA (iPhone notch/home bar) ── */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .navbar { padding-left: max(5%, env(safe-area-inset-left)); padding-right: max(5%, env(safe-area-inset-right)); }
+  footer { padding-bottom: env(safe-area-inset-bottom); }
+}

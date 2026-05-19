@@ -90,6 +90,18 @@
     .faq-a { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
     .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
     .faq-a p { font-size: 0.9rem; color: #6B7280; }
+  
+    @media (max-width: 1024px) {
+      .grid-3 { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 768px) {
+      .pricing-card { padding: 32px 20px; }
+      .service-card-top, .service-card-body, .service-card-footer { padding-left: 20px; padding-right: 20px; }
+      .faq-item summary { font-size: 0.95rem; }
+    }
+    @media (max-width: 600px) {
+      .grid-3 { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
